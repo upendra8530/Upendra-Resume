@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header .title {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #2c3e50;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #ecf0f1;
+            position: relative;
+        }
+
+        .experience-item::before, .education-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+
+        .job-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 3px;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            margin-bottom: 10px;
+        }
+
+        .description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .description li {
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #ecf0f1;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        .summary {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #555;
+            text-align: justify;
+        }
+
+        @media (max-width: 600px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .header {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>Upendra Nath Dubey</h1>
+            <div class="title">Senior Web Designer & Frontend Developer</div>
+            <div class="contact-info">
+                <div>📧 undubey6@gmail.com</div>
+                <div>📱 +91 85306 31160</div>
+                <div>📍 Ahmedabad, Gujarat, India</div>
+                <div>💼 linkedin.com/in/upendra-nath-dubey-7294b4111</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <div class="summary">
+                    Creative and detail-oriented Web Designer & Frontend Developer with over 7 years of experience in designing responsive, SEO-optimized websites and landing pages. Skilled in modern design tools like Figma and Adobe XD, with strong proficiency in HTML, CSS, Bootstrap, Tailwind CSS, SCSS, WordPress, Shopify, React, and Next.js. Proven track record of leading technical migrations, optimizing web performance, and collaborating effectively with cross-functional teams.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Sr. Web Designer → Frontend Developer</div>
+                    <div class="company">Space-O Technologies</div>
+                    <div class="date">Feb 2022 - Present</div>
+                    <div class="description">
+                        Leading web design and frontend development projects with modern technologies.
+                        <ul>
+                            <li>Designed and developed responsive websites and landing pages using Figma, Adobe XD, WordPress, Bootstrap, and SCSS</li>
+                            <li>Led successful conversion to Next.js framework, resulting in improved performance metrics (FCP/LCP) and enhanced user experience</li>
+                            <li>Collaborated closely with marketing teams on multiple internal and client projects, ensuring brand consistency and technical excellence</li>
+                            <li>Implemented SEO optimization strategies and responsive design principles across all projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Senior Web Designer</div>
+                    <div class="company">STALWART DIGITAL</div>
+                    <div class="date">Aug 2019 - Feb 2022</div>
+                    <div class="description">
+                        Specialized in e-commerce solutions and high-converting landing pages.
+                        <ul>
+                            <li>Developed high-converting Shopify-based landing pages and e-commerce solutions</li>
+                            <li>Managed comprehensive client coordination and project delivery from concept to launch</li>
+                            <li>Utilized Photoshop, HTML/CSS, and responsive/mobile-first design techniques to create engaging user experiences</li>
+                            <li>Maintained strong client relationships and delivered projects within specified timelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Web Designer</div>
+                    <div class="company">Siddhi Infosoft</div>
+                    <div class="date">May 2016 - Nov 2017</div>
+                    <div class="description">
+                        Foundation role building core web development skills across multiple platforms.
+                        <ul>
+                            <li>Developed responsive websites using Bootstrap, WordPress, Joomla, and Magento platforms</li>
+                            <li>Gained extensive hands-on experience with HTML/CSS and Photoshop in fast-paced project environments</li>
+                            <li>Contributed to multiple successful web projects while building foundational technical skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <div class="job-title">Bachelor of Commerce (B.Com)</div>
+                    <div class="company">Jiwaji University</div>
+                    <div class="date">2013</div>
+                    <div class="description">
+                        Completed undergraduate degree with focus on commerce and business fundamentals.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Key Skills</h2>
+                <div class="skills">
+                    <div class="skill">HTML5 & CSS3</div>
+                    <div class="skill">Bootstrap</div>
+                    <div class="skill">Tailwind CSS</div>
+                    <div class="skill">SCSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">jQuery</div>
+                    <div class="skill">React.js</div>
+                    <div class="skill">Next.js</div>
+                    <div class="skill">WordPress</div>
+                    <div class="skill">Shopify</div>
+                    <div class="skill">Figma</div>
+                    <div class="skill">Adobe XD</div>
+                    <div class="skill">Photoshop</div>
+                    <div class="skill">Responsive Design</div>
+                    <div class="skill">SEO Optimization</div>
+                    <div class="skill">Performance Optimization</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Portfolio Highlights</h2>
+                
+                <div class="education-item">
+                    <div class="job-title"><a href="https://www.spaceotechnologies.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">Space-O Technologies</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://www.spaceo.ca/" target="_blank" style="color: #2c3e50; text-decoration: none;">SpaceO Canada</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://www.labsmedia.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">Labs Media</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://www.daeken.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">Daeken</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="http://fieldcamp.ai/" target="_blank" style="color: #2c3e50; text-decoration: none;">FieldCamp</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://foxcue.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">Foxcue</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://fyule.io/" target="_blank" style="color: #2c3e50; text-decoration: none;">Fyule</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://lunya.co/" target="_blank" style="color: #2c3e50; text-decoration: none;">Lunya</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://undnlaqr.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">UNDN LAQR</a></div>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title"><a href="https://supercilium.com/" target="_blank" style="color: #2c3e50; text-decoration: none;">Supercilium</a></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hobbies & Interests</h2>
+                
+                <div class="education-item">
+                    <div class="job-title">Watching Movies | Listening to Music | Trekking</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
